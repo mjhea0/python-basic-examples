@@ -1,0 +1,20 @@
+# Ignore bundler config
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/schema.rb
+
+# Ignore all logfiles and tempfiles.
+*.log
+*.rdb
+.*
+!.gitignore
+/tmp
+/log
+/config/database.yml
+/dump.rdb
+/Gemfile.lock
+/.DS_Store
+/public/uploads/thumbs/
+/public/uploads/files/
