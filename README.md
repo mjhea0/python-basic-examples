@@ -1,4 +1,4 @@
-python-basic-emaples
+python-basic-examples
 ====================
 
 python basic examples.
