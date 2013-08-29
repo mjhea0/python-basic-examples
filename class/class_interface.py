@@ -26,6 +26,7 @@ class Provider(Super):
 for klass in (Inheritor, Replacer, Extender):
     print '\n' + klass.__name__ + '...'
     klass(  ).method(  )
+    
 print '\nProvider...'
 x = Provider(  )
 x.delegate(  )
