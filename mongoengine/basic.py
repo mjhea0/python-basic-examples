@@ -64,6 +64,7 @@ p.save()
 print p.tags
 
 #未知位置更新
+#注意更新的是tags的某个元素
 Post.objects(id=object_id, tags='ruby').update(set__tags__S='rubyX')
 p.reload()
 print '未知位置更新后'
@@ -73,3 +74,9 @@ print p.tags
 print p.likes
 Post.objects(id=object_id).update_one(inc__likes=2)
 print p.reload().likes == 3
+
+#为了性能，不加载相关对象的实体
+post = Post.objects.no_dereference().first()
+#看看是不是ObjectId的实例
+print post.author
+#assert(isinstance(post.author, ObjectId))
