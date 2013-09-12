@@ -13,4 +13,4 @@ ee = Emoji.objects().first()
 
 print ee.content
 
-#Emoji.objects.delete()
+Emoji.objects.delete()
