@@ -7,9 +7,11 @@ connect('mongoengine_test')
 class User(Document):
     name = StringField()
     email = EmailField()
-    
+
+#注意: get_or_create函数被deprecated了
+
 bob, created = User.objects.get_or_create(name='Bob Wang', email='debugger@126.com')
-print bob, created
+print bob, created    
 
 bob, created = User.objects.get_or_create(name='Bob Wang', email='debugger@126.com')
 print bob, created
