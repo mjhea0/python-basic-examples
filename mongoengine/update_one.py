@@ -9,7 +9,7 @@ class Membership(Document):
     follow_id = StringField()
     
 #这样写法只会创建ObjectID
-#Mership.objects(member_id="boostbob_id", follow_id="debugger_id").update_one(upsert=True)
+#Membership.objects(member_id="boostbob_id", follow_id="debugger_id").update_one(upsert=True)
 
 #可以创建member_id和follow_id
 #objects中的条件需要，不然只会创建1个记录
